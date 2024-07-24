@@ -1,0 +1,5 @@
+cxx-cmake-vcpkg-template
+========================
+
+configure: `cmake -S . -B build_folder`
+build: `cmake --build build_folder`

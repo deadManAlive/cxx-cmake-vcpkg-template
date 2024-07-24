@@ -6,7 +6,8 @@ find_package(fmt REQUIRED)
 find_package(range-v3 REQUIRED)
 find_package(cxxopts REQUIRED)
 
-add_executable(fibo main.cpp)
+add_executable(fibo src/main.cpp src/fibo.cpp)
+target_include_directories(fibo PRIVATE include)
 
 target_link_libraries(fibo
   PRIVATE

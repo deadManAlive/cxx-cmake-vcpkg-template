@@ -3,5 +3,7 @@ cxx-cmake-vcpkg-template
 
 required tools: git, ninja, ccache, clang
 
-configure: `cmake -S . -B build_folder`
-build: `cmake --build build_folder`
+configure: `cmake --preset default`
+build: `cmake --build build`
+
+build in `build` directory
